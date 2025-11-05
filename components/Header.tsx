@@ -1,5 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
+import { LianetLogo } from './icons';
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,8 +32,9 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#inicio" className="text-2xl font-bold text-white tracking-wider">
-          LIANET<span className="text-secondary">.</span>
+        <a href="#inicio" className="flex items-center gap-2 text-2xl font-bold text-white tracking-wider">
+          <LianetLogo className="w-8 h-8" />
+          <span>LIANET</span>
         </a>
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (

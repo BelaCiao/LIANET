@@ -1,21 +1,29 @@
-
 import React from 'react';
 import { WhatsAppIcon } from './icons';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="relative h-screen flex items-center justify-center text-center text-white">
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: "url('https://picsum.photos/1920/1080?grayscale&blur=2')" }}
-      ></div>
-      <div className="absolute top-0 left-0 w-full h-full bg-primary opacity-80"></div>
+    <section id="inicio" className="relative h-screen flex items-center justify-center text-center text-white bg-primary overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-75">
+        <div 
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vmin] h-[150vmin]"
+          style={{
+            background: 'radial-gradient(circle, rgba(62, 207, 142, 0.15) 0%, rgba(10, 37, 64, 0) 60%)'
+          }}
+        ></div>
+        <div 
+          className="absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[100vmin] h-[100vmin]"
+          style={{
+            background: 'radial-gradient(circle, rgba(62, 207, 142, 0.05) 0%, rgba(10, 37, 64, 0) 70%)'
+          }}
+        ></div>
+      </div>
       <div className="relative z-10 p-6 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-black mb-4 leading-tight">
-          LIANET Soluções: Sua Parceira de TI e Redes em Rio Grande, RS.
+        <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
+          Soluções de TI Inteligentes para um Mundo Conectado
         </h1>
-        <p className="text-lg md:text-xl mb-8 font-light text-gray-200">
-          Oferecemos desde suporte remoto ágil até a montagem completa da infraestrutura de rede da sua empresa. Atendimento presencial e remoto, adaptado à sua necessidade.
+        <p className="text-lg md:text-xl mb-10 font-light text-gray-200 max-w-3xl mx-auto">
+          Otimizamos sua infraestrutura de tecnologia para máxima performance, segurança e confiabilidade.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -28,10 +36,10 @@ const Hero: React.FC = () => {
             href="https://wa.me/5553999335369"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-primary transition-all duration-300 flex items-center justify-center gap-2"
+            className="w-full sm:w-auto bg-primary border-2 border-secondary text-white font-bold py-3 px-8 rounded-full hover:bg-secondary hover:text-primary transition-all duration-300 flex items-center justify-center gap-2"
           >
             <WhatsAppIcon className="w-5 h-5" />
-            Fale Conosco via WhatsApp
+            Fale Conosco
           </a>
         </div>
       </div>

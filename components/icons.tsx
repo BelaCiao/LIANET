@@ -1,5 +1,64 @@
-
 import React from 'react';
+
+export const LianetLogo: React.FC<{ className?: string }> = ({ className }) => (
+  <svg
+    className={className}
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* The 'L' shape in primary color */}
+    <path
+      d="M4 2V30H14V26H8V6H24V14H28V2H4Z"
+      fill="#0A2540"
+    />
+    {/* The circuit 'N' and nodes in secondary green */}
+    <g fill="#3ECF8E">
+      <path
+        d="M12 12V24L20 12V24"
+        stroke="#3ECF8E"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20 12L22 10"
+        stroke="#3ECF8E"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <circle cx="23" cy="9" r="1.5" />
+      <path
+        d="M20 18L22 18"
+        stroke="#3ECF8E"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <circle cx="23" cy="18" r="1.5" />
+      <path
+        d="M20 24L22 26"
+        stroke="#3ECF8E"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <circle cx="23" cy="27" r="1.5" />
+      <path
+        d="M12 12L10 10"
+        stroke="#3ECF8E"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <circle cx="9" cy="9" r="1.5" />
+      <path
+        d="M12 24L10 26"
+        stroke="#3ECF8E"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <circle cx="9" cy="27" r="1.5" />
+    </g>
+  </svg>
+);
 
 export const MonitorIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -48,6 +107,13 @@ export const SpecializationIcon: React.FC<{ className?: string }> = ({ className
     <svg xmlns="http://www.w3.org/2000/svg" className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
     </svg>
+);
+
+export const CodeIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="16 18 22 12 16 6"></polyline>
+    <polyline points="8 6 2 12 8 18"></polyline>
+  </svg>
 );
 
 export const WhatsAppIcon: React.FC<{ className?: string }> = ({ className }) => (

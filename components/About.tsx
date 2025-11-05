@@ -1,15 +1,14 @@
-
 import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="quemsomos" className="py-20 bg-light-bg">
+    <section id="quemsomos" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <img 
-              src="https://picsum.photos/600/400" 
-              alt="Equipe LIANET Soluções" 
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1740&auto=format&fit=crop" 
+              alt="Ambiente de trabalho colaborativo de TI" 
               className="rounded-lg shadow-2xl w-full"
             />
           </div>
