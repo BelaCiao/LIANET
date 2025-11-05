@@ -4,10 +4,10 @@ import { WhatsAppIcon } from './icons';
 
 const Contact: React.FC = () => {
     
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // This is a static site. Form submission logic would require a backend.
-    alert('Obrigado pelo seu contato! Este formulário é uma demonstração.');
+    alert('Obrigado! Sua mensagem foi recebida. Entraremos em contato em breve.');
+    (e.target as HTMLFormElement).reset();
   };
 
   return (

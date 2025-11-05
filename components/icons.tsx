@@ -3,59 +3,36 @@ import React from 'react';
 export const LianetLogo: React.FC<{ className?: string }> = ({ className }) => (
   <svg
     className={className}
-    viewBox="0 0 32 32"
+    viewBox="0 0 42 36"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    aria-label="LIANET Logo"
   >
-    {/* The 'L' shape in primary color */}
-    <path
-      d="M4 2V30H14V26H8V6H24V14H28V2H4Z"
-      fill="#0A2540"
-    />
-    {/* The circuit 'N' and nodes in secondary green */}
+    {/* The main 'L' shape */}
+    <path d="M0 36V0H8V28H28V36H0Z" fill="#0A2540" />
+
+    {/* The circuit 'N' shape */}
+    <g strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      {/* Main lines of the circuit */}
+      <path d="M12 28V16" stroke="#3ECF8E" />
+      <path d="M12 16L24 28" stroke="#3ECF8E" />
+      <path d="M24 28V16" stroke="#3ECF8E" />
+
+      {/* Outgoing circuit lines */}
+      <path d="M24 16L32 8" stroke="#3ECF8E" />
+      <path d="M32 12V20" stroke="#3ECF8E" />
+      <path d="M24 28L32 32" stroke="#3ECF8E" />
+    </g>
+
+    {/* Nodes (circles) */}
     <g fill="#3ECF8E">
-      <path
-        d="M12 12V24L20 12V24"
-        stroke="#3ECF8E"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M20 12L22 10"
-        stroke="#3ECF8E"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <circle cx="23" cy="9" r="1.5" />
-      <path
-        d="M20 18L22 18"
-        stroke="#3ECF8E"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <circle cx="23" cy="18" r="1.5" />
-      <path
-        d="M20 24L22 26"
-        stroke="#3ECF8E"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <circle cx="23" cy="27" r="1.5" />
-      <path
-        d="M12 12L10 10"
-        stroke="#3ECF8E"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <circle cx="9" cy="9" r="1.5" />
-      <path
-        d="M12 24L10 26"
-        stroke="#3ECF8E"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <circle cx="9" cy="27" r="1.5" />
+      <circle cx="12" cy="28" r="2.5" />
+      <circle cx="12" cy="16" r="2.5" />
+      <circle cx="24" cy="28" r="2.5" />
+      <circle cx="24" cy="16" r="2.5" />
+      <circle cx="33" cy="7" r="2.5" />
+      <circle cx="32" cy="21" r="2.5" />
+      <circle cx="33" cy="33" r="2.5" />
     </g>
   </svg>
 );
